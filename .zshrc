@@ -16,3 +16,8 @@ antigen theme nfarrar/oh-my-powerline oh-my-powerline
 
 # Tell antigen that you're done.
 antigen apply
+
+# Source host specific zshrc
+if [ -f ~/.zshrc_override ]; then
+    source ~/.zshrc_override
+fi
