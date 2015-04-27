@@ -1,7 +1,8 @@
 # Variables ##############
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".zshrc .vimrc"             # list of files/folders to symlink in homedir
+dir=~/dotfiles                                       # dotfiles directory
+olddir=~/dotfiles_old                                # old dotfiles backup directory
+files=".vimrc .zshrc .gitconfig .gitignore_global"   # list of files/folders to symlink in homedir
+
 
 # Symlinks ###############
 # create dotfiles_old in homedir
@@ -24,23 +25,22 @@ for file in $files; do
     ln -s $dir/$file ~/$file
 done
 
+
 # Vim setup ###############
-if [ ! -d ~/.vim/bundle/Vundle.vim ]
-    then
-        echo "Getting vundle"
-        git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
+    echo "Getting vundle"
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
 vim +PluginInstall +qall
 
-# zsh setup ##############
-if [ ! -d ~/.oh-my-zsh ]
-    then
-        echo "Getting oh-my-zsh"
-        zsh
-        curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-        exit
+
+# ZSH setup
+echo "Getting antigen"
+if [ ! -d ~/.antigen ]; then
+    echo "Installing antigen"
+    mkdir ~/.antigen
+    git clone https://github.com/zsh-users/antigen.git ~/.antigen
 fi
 
-# Sourcing ###############
-source ~/.zshrc
+zsh
