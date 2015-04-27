@@ -4,3 +4,5 @@
 [user]
 	name = Alexander Kron
 	email = alex@duosecurity.com
+[color]
+    ui = auto
