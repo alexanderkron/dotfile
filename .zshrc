@@ -7,6 +7,7 @@ antigen use oh-my-zsh
 antigen bundle brew
 antigen bundle git
 antigen bundle python
+antigen bundle vagrant
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
