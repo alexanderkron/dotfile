@@ -12,7 +12,7 @@ antigen bundle python
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Use powerline
-antigen theme nfarrar/oh-my-powerline oh-my-powerline
+antigen theme https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme powerline
 
 # Tell antigen that you're done.
 antigen apply
