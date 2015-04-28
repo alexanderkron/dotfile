@@ -13,7 +13,7 @@ antigen bundle vagrant
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Use powerline
-antigen theme https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme powerline
+antigen theme philips
 
 # Tell antigen that you're done.
 antigen apply
