@@ -27,15 +27,6 @@ done
 
 
 # Vim setup ###############
-# Install AG
-unamestr=`uname`
-if [[ "$unamestr" == 'Linux' ]]; then
-    yum install -y pcre-devel
-    yum install xz-devel
-    git clone https://github.com/ggreer/the_silver_searcher ag && cd ag && ./build.sh && sudo make install
-    rm -rf ~/dotfiles/ag
-fi
-
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
     echo "Getting vundle"
     git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
