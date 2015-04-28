@@ -25,10 +25,7 @@ let mapleader=","
 
 " Highlight the current line
 set cursorline
-" Set cursorline colors
-highlight CursorLine cterm=bold term=bold ctermbg=235
-" Set color of number column on cursorline
-highlight CursorLineNR ctermbg=235 ctermfg=white
+hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=none
 
 set expandtab
 set hidden
