@@ -108,6 +108,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
+let g:ctrlp_max_files=0
 nnoremap <Leader>p :CtrlP<Cr>
 
 " CtrlP Funky
