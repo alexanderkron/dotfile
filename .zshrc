@@ -12,7 +12,7 @@ antigen bundle vagrant
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Use powerline
+# Theme it up
 antigen theme philips
 
 # Tell antigen that you're done.
@@ -22,3 +22,6 @@ antigen apply
 if [ -f ~/.zshrc_override ]; then
     source ~/.zshrc_override
 fi
+
+# Global Aliases
+alias ls='ls -1'
