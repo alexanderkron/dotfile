@@ -23,5 +23,9 @@ if [ -f ~/.zshrc_override ]; then
     source ~/.zshrc_override
 fi
 
+# Make 'ls' pretty
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 # Global Aliases
 alias ls='ls -1'
