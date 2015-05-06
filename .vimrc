@@ -98,7 +98,7 @@ let NERDTreeQuitOnOpen = 1
 
 " Ag
 " Don't autoopen first result
-nnoremap <leader>a :Ag! -i<Space>'
+nnoremap <leader>a :Ag!<Space>'
 
 " CtrlP
 let g:ctrlp_match_window = 'bottom,order:ttb'
