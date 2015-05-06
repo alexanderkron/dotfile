@@ -15,6 +15,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'hdima/python-syntax'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

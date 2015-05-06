@@ -1,6 +1,7 @@
 [core]
     user = Alexander Kron
     email = alex@duosecurity.com
+	excludesfile = ~/.gitignore_global
 [user]
 	name = Alexander Kron
 	email = alex@duosecurity.com
