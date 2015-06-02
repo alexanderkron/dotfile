@@ -17,6 +17,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ConradIrwin/vim-bracketed-paste'
+Plugin 'ryanoasis/vim-webdevicons'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
