@@ -30,6 +30,7 @@ let mapleader=","
 set cursorline
 hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=none
 
+set autoread
 set expandtab
 set hidden
 set hlsearch
@@ -69,7 +70,7 @@ au BufNewFile,BufRead *.html set filetype=html
 
 " per file indentation
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
-autocmd Filetype scss setlocal ts=2 sts=2 sw=2
+autocmd Filetype scss setlocal ts=4 sts=4 sw=4
 
 " Editing
 """"""""""""""""""""""""""""""""""""""""""""""
