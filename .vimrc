@@ -106,13 +106,15 @@ nnoremap <leader>a :Ag!<Space>'
 
 " CtrlP
 let g:ctrlp_match_window = 'bottom,order:ttb'
-" let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = '0'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ }
 let g:ctrlp_max_files=0
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
 nnoremap <Leader>p :CtrlP<Cr>
 
 " CtrlP Funky
