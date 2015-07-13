@@ -105,7 +105,6 @@ let NERDTreeQuitOnOpen = 1
 nnoremap <leader>a :Ag!<Space>'
 
 " Command-t
-let g:CommandTCancelMap = ['<ESC>', '<ALT-BS>']
 nnoremap <silent> <Leader>p :CommandT<CR>
 
 " CtrlP Funky
