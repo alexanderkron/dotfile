@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'rking/ag.vim'
+Plugin 'wincent/command-t'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'scrooloose/nerdtree'
@@ -104,21 +105,9 @@ let NERDTreeQuitOnOpen = 1
 " Don't autoopen first result
 nnoremap <leader>a :Ag!<Space>'
 
-" CtrlP
-let g:ctrlp_match_window = 'bottom,order:ttb'
-let g:ctrlp_working_path_mode = '0'
-let g:ctrlp_max_files=0
-" Use Ag for searching if it exists
-if executable('ag')
-    let g:ctrlp_user_command = 'ag %s -i --nogroup --hidden
-          \ --ignore .git
-          \ --ignore .svn
-          \ --ignore .hg
-          \ --ignore .DS_Store
-          \ --ignore "**/*.pyc"
-          \ -g ""'
-endif
-nnoremap <Leader>p :CtrlP<Cr>
+" Command-t
+let g:CommandTCancelMap = ['<ESC>', '<ALT-BS>']
+nnoremap <silent> <Leader>p :CommandT<CR>
 
 " CtrlP Funky
 let g:ctrlp_extensions = ['funky']
