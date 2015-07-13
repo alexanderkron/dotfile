@@ -107,6 +107,7 @@ nnoremap <leader>a :Ag!<Space>'
 
 " Command-t
 nnoremap <silent> <Leader>p :CommandT<CR>
+let g:CommandTHighlightColor='Todo'
 
 " CtrlP Funky
 let g:ctrlp_extensions = ['funky']
