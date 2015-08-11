@@ -31,3 +31,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Global Aliases
 alias ls='ls -1'
+
+# Use Vim
+export EDITOR=vim
