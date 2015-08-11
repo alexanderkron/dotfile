@@ -108,6 +108,8 @@ nnoremap <leader>a :Ag!<Space>'
 " Command-t
 nnoremap <silent> <Leader>p :CommandT<CR>
 let g:CommandTHighlightColor='Todo'
+let g:CommandTMaxFiles=100000
+let g:CommandTTraverseSCM='pwd'
 
 " CtrlP Funky
 let g:ctrlp_extensions = ['funky']
