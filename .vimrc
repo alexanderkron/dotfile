@@ -76,9 +76,6 @@ autocmd Filetype scss setlocal ts=4 sts=4 sw=4
 " Editing
 """"""""""""""""""""""""""""""""""""""""""""""
 
-" inset new line w/o edit
-map <leader>n o<Esc>
-
 " make escape faster
 inoremap jk <esc>
 
