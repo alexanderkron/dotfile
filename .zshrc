@@ -8,6 +8,7 @@ antigen bundle brew
 antigen bundle colored-man
 antigen bundle colorize
 antigen bundle git
+antigen bundle npm
 antigen bundle python
 antigen bundle vagrant
 
