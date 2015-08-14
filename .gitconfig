@@ -7,3 +7,5 @@
     email = alex@duosecurity.com
 [color]
     ui = auto
+[push]
+	default = simple
