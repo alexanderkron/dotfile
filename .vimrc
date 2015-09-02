@@ -104,9 +104,9 @@ nnoremap <leader>a :Ag!<Space>'
 
 " Command-t
 nnoremap <silent> <Leader>p :CommandT<CR>
-let g:CommandTHighlightColor='Todo'
-let g:CommandTMaxFiles=100000
-let g:CommandTTraverseSCM='pwd'
+let g:CommandTHighlightColor = 'Todo'
+let g:CommandTMaxFiles = 100000
+let g:CommandTTraverseSCM = 'pwd'
 et g:CommandTAlwaysShowDotFiles = 1
 
 " CtrlP Funky
@@ -114,8 +114,8 @@ let g:ctrlp_extensions = ['funky']
 nnoremap <Leader>f :CtrlPFunky<Cr>
 
 " Syntastic
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_javascript_checkers = ['jshint']
 " Close gutter with ,g
 nnoremap <leader>g :SyntasticReset<CR>
 
@@ -124,4 +124,4 @@ set background=dark
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme             = 'solarized'
+let g:airline_theme = 'solarized'
