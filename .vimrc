@@ -107,6 +107,7 @@ nnoremap <silent> <Leader>p :CommandT<CR>
 let g:CommandTHighlightColor='Todo'
 let g:CommandTMaxFiles=100000
 let g:CommandTTraverseSCM='pwd'
+et g:CommandTAlwaysShowDotFiles = 1
 
 " CtrlP Funky
 let g:ctrlp_extensions = ['funky']
