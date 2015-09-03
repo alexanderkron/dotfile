@@ -10,6 +10,7 @@ antigen bundle colorize
 antigen bundle git
 antigen bundle npm
 antigen bundle python
+antigen bundle sudo
 antigen bundle vagrant
 
 # Syntax highlighting bundle.
