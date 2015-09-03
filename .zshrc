@@ -12,6 +12,7 @@ antigen bundle npm
 antigen bundle python
 antigen bundle sudo
 antigen bundle vagrant
+antigen bundle web-search
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
