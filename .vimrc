@@ -56,6 +56,9 @@ nnoremap <leader>r :bn<CR>
 " Keep a few lines at top and bottom of buffer
 set scrolloff=10
 
+" Save readonly file
+nnoremap <leader>sw :w !sudo tee %<CR>
+
 
 " Formatting
 """"""""""""""""""""""""""""""""""""""""""""""
