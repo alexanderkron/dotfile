@@ -59,6 +59,8 @@ set scrolloff=10
 " Save readonly file
 nnoremap <leader>sw :w !sudo tee %<CR>
 
+" Show command history
+nnoremap <leader>h q:
 
 " Formatting
 """"""""""""""""""""""""""""""""""""""""""""""
