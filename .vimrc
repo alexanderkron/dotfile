@@ -120,7 +120,7 @@ nnoremap <Leader>f :CtrlPFunky<Cr>
 
 " Syntastic
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['eslint']
 " Close gutter with ,g
 nnoremap <leader>g :SyntasticReset<CR>
 
