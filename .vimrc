@@ -69,6 +69,10 @@ nnoremap <C-k> <C-u>
 " Replay macro over visual selection (must provide register)
 vnoremap <leader>q :'<,'>normal @
 
+" Excludes
+set wildignore+=**/node_modules
+set wildignore+=*.swp
+
 " Formatting
 """"""""""""""""""""""""""""""""""""""""""""""
 set sw=4
