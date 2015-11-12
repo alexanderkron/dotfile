@@ -34,6 +34,8 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Global Aliases
 alias ls='ls -1'
+alias prettypath='echo $PATH | tr \: \\n'
+
 
 # Use Vim
 export EDITOR=vim
