@@ -10,7 +10,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'rking/ag.vim'
 Plugin 'wincent/command-t'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'scrooloose/nerdtree'
 Plugin 'hdima/python-syntax'
@@ -18,7 +18,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ConradIrwin/vim-bracketed-paste'
-Plugin 'ryanoasis/vim-webdevicons'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
