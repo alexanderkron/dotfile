@@ -104,6 +104,12 @@ match ErrorMsg '\s\+$'
 set backspace=eol
 
 
+" Colors
+"""""""""""""""""""""""""""""""""""""""""""""""
+let &t_Co=256
+set background=dark
+
+
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""
 
@@ -135,8 +141,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 nnoremap <leader>g :SyntasticReset<CR>
 
 " Airline
-set background=dark
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'solarized'
+let g:airline_theme= 'solarized'
