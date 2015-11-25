@@ -26,10 +26,6 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""""""
 let mapleader=","
 
-" Highlight the current line
-set cursorline
-hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=none
-
 set autoread
 set expandtab
 set hidden
@@ -106,8 +102,11 @@ set backspace=eol
 
 " Colors
 """""""""""""""""""""""""""""""""""""""""""""""
-let &t_Co=256
 set background=dark
+
+" Highlight the current line
+set cursorline
+hi CursorLine ctermbg=235
 
 
 " Plugins
