@@ -103,11 +103,11 @@ set backspace=eol
 " Colors
 """""""""""""""""""""""""""""""""""""""""""""""
 set background=dark
+let &t_Co=256
 
 " Highlight the current line
 set cursorline
-hi CursorLine ctermbg=235
-
+hi CursorLine cterm=None ctermbg=234
 
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""
@@ -143,4 +143,3 @@ nnoremap <leader>g :SyntasticReset<CR>
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme= 'solarized'
