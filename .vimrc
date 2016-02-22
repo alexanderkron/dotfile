@@ -60,6 +60,8 @@ nnoremap <leader>h q:
 " Remap half paging
 nnoremap <C-j> <C-d>
 nnoremap <C-k> <C-u>
+vnoremap <C-j> <C-d>
+vnoremap <C-k> <C-u>
 
 " Replay macro over visual selection (must provide register)
 vnoremap <leader>q :'<,'>normal @
