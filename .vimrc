@@ -109,7 +109,7 @@ let &t_Co=256
 
 " Highlight the current line
 set cursorline
-hi CursorLine cterm=None ctermbg=234
+hi CursorLine cterm=None ctermbg=235
 
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""
