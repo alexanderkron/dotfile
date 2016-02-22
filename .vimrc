@@ -104,8 +104,6 @@ set backspace=eol
 
 " Colors
 """""""""""""""""""""""""""""""""""""""""""""""
-set background=dark
-let &t_Co=256
 
 " Highlight the current line
 set cursorline
@@ -126,7 +124,6 @@ nnoremap <leader>a :Ag!<Space>'
 
 " Command-t
 nnoremap <silent> <Leader>p :CommandT<CR>
-let g:CommandTHighlightColor = 'Todo'
 let g:CommandTMaxFiles = 100000
 let g:CommandTTraverseSCM = 'pwd'
 let g:CommandTAlwaysShowDotFiles = 1
