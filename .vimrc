@@ -16,6 +16,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'hdima/python-syntax'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 
@@ -107,7 +108,7 @@ set backspace=eol
 
 " Highlight the current line
 set cursorline
-hi CursorLine cterm=None ctermbg=235
+hi CursorLine cterm=None ctermbg=234
 
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""
@@ -127,6 +128,7 @@ nnoremap <silent> <Leader>p :CommandT<CR>
 let g:CommandTMaxFiles = 100000
 let g:CommandTTraverseSCM = 'pwd'
 let g:CommandTAlwaysShowDotFiles = 1
+let g:CommandTHighlightColor = "Conceal"
 
 " CtrlP Funky
 let g:ctrlp_extensions = ['funky']
@@ -144,3 +146,4 @@ nnoremap <leader>g :SyntasticReset<CR>
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'distinguished'
