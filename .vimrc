@@ -13,7 +13,6 @@ Plugin 'wincent/command-t'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'scrooloose/nerdtree'
-Plugin 'hdima/python-syntax'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -50,7 +49,7 @@ nnoremap <leader>e :bp<CR>
 nnoremap <leader>r :bn<CR>
 
 " Keep a few lines at top and bottom of buffer
-set scrolloff=10
+"set scrolloff=10
 
 " Save readonly file
 nnoremap <leader>sw :w !sudo tee %<CR>
