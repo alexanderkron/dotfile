@@ -14,6 +14,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdcommenter'
@@ -70,6 +71,10 @@ vnoremap <leader>q :'<,'>normal @
 set wildignore+=**/node_modules
 set wildignore+=*.swp
 
+" Fold it up
+set foldmethod=indent
+set foldnestmax=2
+
 " Formatting
 """"""""""""""""""""""""""""""""""""""""""""""
 set sw=4
@@ -108,6 +113,12 @@ set backspace=eol
 " Highlight the current line
 set cursorline
 hi CursorLine cterm=None ctermbg=234
+
+" Highlight folds
+hi Folded ctermbg=237
+
+" Highlight line number gutter
+hi LineNr ctermbg=235
 
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""
