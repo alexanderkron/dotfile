@@ -9,9 +9,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/MatchTagAlways'
 Plugin 'rking/ag.vim'
-Plugin 'wincent/command-t'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'junegunn/fzf'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
@@ -48,9 +48,6 @@ set shortmess+=I
 " Move through buffers
 nnoremap <leader>e :bp<CR>
 nnoremap <leader>r :bn<CR>
-
-" Keep a few lines at top and bottom of buffer
-"set scrolloff=10
 
 " Save readonly file
 nnoremap <leader>sw :w !sudo tee %<CR>
@@ -91,6 +88,10 @@ au BufNewFile,BufRead *.html set filetype=html
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype scss setlocal ts=4 sts=4 sw=4
 
+" show trailing whitespace
+match ErrorMsg '\s\+$'
+
+
 " Editing
 """"""""""""""""""""""""""""""""""""""""""""""
 
@@ -99,9 +100,6 @@ inoremap jk <esc>
 
 " clear search highlighting
 nnoremap <leader><space> :nohlsearch<CR>
-
-" show trailing whitespace
-match ErrorMsg '\s\+$'
 
 " allow backspace over EOL
 set backspace=eol
@@ -133,12 +131,8 @@ let NERDTreeQuitOnOpen = 1
 " Don't autoopen first result
 nnoremap <leader>a :Ag!<Space>'
 
-" Command-t
-nnoremap <silent> <Leader>p :CommandT<CR>
-let g:CommandTMaxFiles = 100000
-let g:CommandTTraverseSCM = 'pwd'
-let g:CommandTAlwaysShowDotFiles = 1
-let g:CommandTHighlightColor = "Conceal"
+" FZF
+nnoremap <silent> <Leader>p :FZF<CR>
 
 " CtrlP Funky
 let g:ctrlp_extensions = ['funky']
@@ -156,4 +150,3 @@ nnoremap <leader>g :SyntasticReset<CR>
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'distinguished'
