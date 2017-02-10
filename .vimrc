@@ -108,6 +108,8 @@ set backspace=eol
 " Colors
 """""""""""""""""""""""""""""""""""""""""""""""
 
+set t_Co=256
+
 " Highlight the current line
 set cursorline
 hi CursorLine cterm=None ctermbg=234
@@ -132,11 +134,11 @@ let NERDTreeQuitOnOpen = 1
 nnoremap <leader>a :Ag!<Space>'
 
 " FZF
-nnoremap <silent> <Leader>p :FZF<CR>
+nnoremap <leader>p :FZF<CR>
 
 " CtrlP Funky
 let g:ctrlp_extensions = ['funky']
-nnoremap <Leader>f :CtrlPFunky<Cr>
+nnoremap <leader>f :CtrlPFunky<Cr>
 
 " Syntastic
 let g:syntastic_python_checkers = ['flake8']
@@ -150,3 +152,4 @@ nnoremap <leader>g :SyntasticReset<CR>
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'distinguished'
