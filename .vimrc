@@ -135,6 +135,7 @@ nnoremap <leader>a :Ag!<Space>'
 
 " FZF
 nnoremap <leader>p :FZF<CR>
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " CtrlP Funky
 let g:ctrlp_extensions = ['funky']

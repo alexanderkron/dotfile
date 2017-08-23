@@ -36,7 +36,8 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias glog='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 alias ls='ls -1'
 alias prettypath='echo $PATH | tr \: \\n'
-
+# use brew ruby
+alias ruby='/usr/local/bin/ruby'
 
 # Use Vim
 export EDITOR=vim
